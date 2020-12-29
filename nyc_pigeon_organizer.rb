@@ -8,7 +8,7 @@ def nyc_pigeon_organizer(data)
         if !final_hash[pigeon_name]
           final_hash[pigeon_name] = {}
         end
-        if !final_hash[pigeon_name][characteristic]
+        if !final_hash[pigeon_name][key]
           final_hash[pigeon_name] = characteristic
         end
       end
