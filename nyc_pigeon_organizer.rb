@@ -11,6 +11,7 @@ def nyc_pigeon_organizer(data)
         end
         if !final_hash[pigeon_name][characteristic]
           final_hash[pigeon_name] = characteristic
+          binding.pry
         end
       end
     end
