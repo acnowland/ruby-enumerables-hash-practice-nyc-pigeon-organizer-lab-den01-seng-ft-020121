@@ -9,8 +9,9 @@ def nyc_pigeon_organizer(data)
           final_hash[pigeon_name] = {}
         end
         if !final_hash[pigeon_name][key]
-          final_hash[pigeon_name] = []
+          final_hash[pigeon_name][key] = []
         end
+        final_hash[pigeon_name][key].push(characteristic)
       end
     end
     binding.pry
