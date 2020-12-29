@@ -7,13 +7,12 @@ def nyc_pigeon_organizer(data)
       pigeon.each do |pigeon_name|
         if !final_hash[pigeon_name]
           final_hash[pigeon_name] = {}
-          binding.pry
         end
         if !final_hash[pigeon_name][characteristic]
           final_hash[pigeon_name] = characteristic
-          binding.pry
         end
       end
+      binding.pry
     end
   end
   binding.pry
