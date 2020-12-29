@@ -2,7 +2,7 @@ require 'pry'
 
 def nyc_pigeon_organizer(data)
   # write your code here!
-  data.each_with_object({}) do |(key,value), final_hash|
+  final_results = data.each_with_object({}) do |(key,value), final_hash|
     value.each do |characteristic, pigeon|
       pigeon.each do |pigeon_name|
         if !final_hash[pigeon_name]
@@ -14,7 +14,6 @@ def nyc_pigeon_organizer(data)
         final_hash[pigeon_name][key].push(characteristic)
       end
     end
-    binding.pry
   end
   binding.pry
 end
