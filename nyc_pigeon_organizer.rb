@@ -12,8 +12,8 @@ def nyc_pigeon_organizer(data)
           final_hash[pigeon_name] = characteristic
         end
       end
-      binding.pry
     end
+    binding.pry
   end
   binding.pry
 end
